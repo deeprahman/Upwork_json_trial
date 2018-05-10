@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "companyName": "Josh's Window Service"
+    },
+    {
+      "logins": [
+        "Pat",
+        "Scot",
+        "Rich",
+        "Kimo",
+        "Walter"
+      ]
+    },
+    {
+      "Password": [
+        "123",
+        "123",
+        "123",
+        "123",
+        "123"
+      ]
+    },
+    {
+      "LastName": [
+        "Bucley",
+        "Audson",
+        "Nagi",
+        "",
+        ""
+      ]
+    },
+    {
+      "hourlyRage": [
+        "45",
+        "37",
+        "55",
+        "50.06",
+        "20",
+        "15"
+      ]
+    },
+    {
+      "jobs": [
+        "Lee,Adrian",
+        "Sikorsky,Van"
+      ]
+    },
+    {
+      "admins": [
+        "dp.rahman@hotmail.com"
+      ]
+    },
+    {
+      "adminPassword": "123"
+    }
+  ]
+}
