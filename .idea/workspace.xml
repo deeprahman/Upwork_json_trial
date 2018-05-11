@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c474b457-44f3-4b73-b98c-bdf2ae9343f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/auth_class/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/auth_class/Auth.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Auth.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/auth_class/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+            <state relative-caret-position="417">
+              <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -173,12 +181,12 @@
       <workItem from="1526040700878" duration="2541000" />
       <workItem from="1526059099375" duration="211000" />
       <workItem from="1526059329481" duration="226000" />
-      <workItem from="1526059580059" duration="4447000" />
+      <workItem from="1526059580059" duration="5810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22942000" />
+    <option name="totallyTimeSpent" value="24305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -189,7 +197,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972136" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.51121074" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5110803" />
       <window_info anchor="right" id="Remote Host" order="4" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498452" weight="0.16717096" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -513,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/auth_class/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="417">
+          <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
         </state>
       </provider>
     </entry>

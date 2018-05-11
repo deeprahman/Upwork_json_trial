@@ -1,25 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dprah
- * Date: 5/11/2018
- * Time: 6:33 PM
- */
 
 namespace classes\auth_class;
-
-
+/**
+ * Class Auth
+ * @package classes\auth_class
+ */
 class Auth
 {
     protected $input_usrname;
     protected $input_pass;
 
-    protected $usrname_array=[];
-    protected $pass_array=[];
+    protected $usrname_array = [];
+    protected $pass_array = [];
     private $admin_name_array;
     private $admin_pass_array;
 
-    protected  $usr_id;
+    protected $usr_id;
 
     public function __construct(string &$usrname,
                                 string &$passwrd,
@@ -28,35 +24,62 @@ class Auth
                                 array &$adm_name,
                                 array &$adm_pass)
     {
-       $this->input_usrname =& $usrname;
-       $this->input_usrname =& $passwrd;
-       $this->usrname_array =& $usr_array;
-       $this->pass_array =& $pass_array;
-       $this->admin_name_array =& $adm_name;
-       $this->admin_pass_array =& $adm_pass;
+        $this->input_usrname =& $usrname;
+        $this->input_usrname =& $passwrd;
+        $this->usrname_array =& $usr_array;
+        $this->pass_array =& $pass_array;
+        $this->admin_name_array =& $adm_name;
+        $this->admin_pass_array =& $adm_pass;
     }
 
 //    Match the entered username password and return the corresponding key
-    public function matchPass():array {
+    public function matchPass(): array
+    {
         //search username array
 
         $key = array_search($this->input_usrname,
-                            $this->usrname_array);
+            $this->usrname_array);
         //admin = -1 : user is not an admin
-        $admin= -1;
-        if (empty($key)){
+        $admin = -1;
+        if (empty($key)) {
             //admin = 0 : user not exist
             $admin = 0;
-        }else{
+        } else {
             //search admin name array
-            $key =array_search($this->input_usrname,
+            $key = array_search($this->input_usrname,
                 $this->admin_name_array);
-            if ($key){
+            if ($key) {
                 //admin = 1 : user is an admin.
                 $admin = 1;
             }
         }
+        switch ($admin) {
+            case -1:
+                {
+                    if (
+                        $this->input_pass == $this->pass_array[$key]
+                    ) {
+                        return [$admin, $key];
+                    } else {
+                        return [$admin, NULL];
+                    }
+                }
+            case 1:
+                {
+                    if (
+                        $this->input_pass == $this->admin_pass_array
+                    ) {
+                        return [$admin, $key];
+                    } else {
+                        return [$admin, NULL];
+                    }
+                }
+            case 0:
+                {
+                    return [$admin, NULL];
+                }
 
+        }
     }
 
 }
