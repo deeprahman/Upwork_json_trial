@@ -1,11 +1,7 @@
 <?php
 
-  use classes\json_classes\JsonTOArray;
-  include "classes/json_classes/JsonTOArray.php";
+ include "jason_data.php";
 
-  $json_file_path="json/hours.json";
-  $array = new JsonTOArray($json_file_path);
+//  include "views/form.html.php";
 
-  $data=$array->jsonTOArray()['data'];
-
-
+  include "views/upload.html.php";
