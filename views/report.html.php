@@ -6,36 +6,39 @@
         <table id="target-table">
             <thead>
             <tr class="lead">
-                <td>S.L</td>
-                <td>DAY</td>
-                <td>HOURS</td>
-                <td>YEAR</td>
+                <td>serial</td>
+                <td class="pl-3">Date</td>
+                <td class="pl-3">Hours</td>
+                <td class="pl-3">Job</td>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>
-                    <p class="lead">1</p>
+                    <p class="lead ml-3">1</p>
                 </td>
                 <td>
-                    <input type="date" class="from-control" name="date1">
+                    <input form="sub-form" type="datetime-local" class="from-control ml-3" name="date1">
                 </td>
                 <td>
-                    <input type="text" class="form-control" name="hours1" placeholder="Hours">
+                    <input form="sub-form" type="text" class="form-control ml-3" name="hours1" placeholder="Hours">
                 </td>
                 <td>
-                    <input type="text" class="form-control" name="job1" placeholder="Job">
+                    <input form="sub-form" type="text" class="form-control ml-3" name="job1" placeholder="Job">
                 </td>
                 <td>
-                    <button class="btn" v-on:click="addrow">Add Row</button>
+                    <button  class="btn ml-3" onclick="addFunc()">Add Row</button>
                 </td>
                 <td>
-                    <button class="btn">Subtract Row</button>
+                    <button class="btn ml-3" onclick="subFunc()">Subtract Row</button>
                 </td>
 
             </tr>
             </tbody>
         </table>
+        <form id="sub-form" action="" method="post">
+            <input type="submit" name="submit" value="Report">
+        </form>
     </div>
-
+    <script src="views/js/app.js"></script>
 <?php include "html/footer.html" ?>
