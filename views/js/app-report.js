@@ -1,7 +1,7 @@
 let report = new Vue({
     el:"#app-report",
     data:{
-        serial:"S.L",
+        // serial:"S.L",
         heading1:"DAY",
         heading2:"HOURS",
         heading3:"JOB",
