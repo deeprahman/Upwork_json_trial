@@ -13,7 +13,7 @@
       ]
     },
     {
-      "Password": [
+      "password": [
         "123",
         "123",
         "123",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "LastName": [
+      "lastName": [
         "Bucley",
         "Audson",
         "Nagi",
@@ -48,11 +48,14 @@
     },
     {
       "admins": [
-        "dp.rahman@hotmail.com"
+        "dp.rahman@hotmail.com",
+        "dp.rahman@gmail.com",
+        "deep",
+        "isat"
       ]
     },
     {
-      "adminPassword": "123"
+      "adminPassword":["123","123","321","321"]
     }
   ]
 }

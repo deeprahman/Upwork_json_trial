@@ -2,7 +2,7 @@
     <div id="app-report" class="container-fluid col-md-8 offset-md-2 alert" style="margin-top: 55px;">
     <div class="h1"
          style="text-align: center;padding:30px 50px; text-decoration: underline;"><?= $data['companyName'] ?></div>
-    <div class="h3" style="text-align: center;">Weekly Hours of Firstname[loginId] Lastname[loginId]</div>
+    <div class="h3" style="text-align: center;">Weekly Hours of <?=$name?> </div>
         <table id="target-table">
             <thead>
             <tr class="lead">
@@ -37,7 +37,7 @@
             </tbody>
         </table>
         <form id="sub-form" action="" method="post">
-            <input type="submit" name="submit" value="Report">
+            <input type="submit" class="btn-danger float-right" name="submit" value="Report">
         </form>
     </div>
     <script src="views/js/app.js"></script>
